@@ -33,6 +33,6 @@ module.exports = {
         extensions: ['.jsx','.js']
       }
     ],
-    'import/prefer-defaut-export': 'off'
+    'import/prefer-default-export': 'off'
   },
 };

@@ -6,29 +6,29 @@ import Main from './pages/Main';
 import User from './pages/User';
 
 const Routes = createAppContainer(
-    createBottomTabNavigator(
+    createStackNavigator(
         {
             Main,
             User,
         },
         {
-            tabBarOptions: {
-                activeTintColor: '#fff',
-                labelStyle: {
-                    fontSize: 12,
-                },
-                style: {
-                    backgroundColor: '#7159c1',
-                },
-            },
-            // headerLayoutPreset: 'center',
-            // headerBackTitleVisible: false,
-            // defaultNavigationOptions: {
-            //     headerStyle: {
+            // tabBarOptions: {
+            //     activeTintColor: '#fff',
+            //     labelStyle: {
+            //         fontSize: 12,
+            //     },
+            //     style: {
             //         backgroundColor: '#7159c1',
             //     },
-            //     headerTintColor: '#fff',
             // },
+            headerLayoutPreset: 'center',
+            headerBackTitleVisible: false,
+            defaultNavigationOptions: {
+                headerStyle: {
+                    backgroundColor: '#7159c1',
+                },
+                headerTintColor: '#fff',
+            },
         }
     )
 );
